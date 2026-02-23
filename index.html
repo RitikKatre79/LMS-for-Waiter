@@ -28,9 +28,8 @@
         .box {
             width: 300px;
             height: 220px;
-            background-color:  #83e5ee
+            background-color: #83e5ee;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             transition: 0.3s;
         }
@@ -59,12 +58,43 @@
         }
 
         .header-container {
-            width: 100%;
-            padding: 25px 0;
-            border: 2px solid #83e5ee;
-            border-radius: 20px 20px 20px 20px;
-            background-color: #83e5ee;
-            text-align: center;
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            background: #17d2e3;
+            border-radius: 20px;
+            color: rgb(9, 8, 8);
+        }
+
+        .header-container h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+
+        .header-container p {
+            font-size: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .info {
+            width: 80%;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #e8ecec;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .info ul {
+            padding-left: 20px;
+        }
+
+        .info li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 15px;
+            color: #333;
         }
     </style>
 </head>
@@ -73,17 +103,12 @@
 
     <div class="header-container">
         <h1>LMS for Waiter</h1>
+        <p>Welcome to the LMS for Waiter! Here you can find video tutorials on various aspects of being a waiter, from
+            greeting customers to serving tea. Click on the videos to watch and learn new skills. You can also add your
+            own videos by clicking the plus icon. Happy learning!</p>
     </div>
 
     <div class="container">
-
-        <div class="box">
-            <h3>How to Serve Tea</h3>
-            <video controls>
-                <source src="tea-serving-tutorial.mp4" type="video/mp4">
-                Your browser does not support video.
-            </video>
-        </div>
 
         <div class="box">
             <h3>How to Greet a Customer</h3>
@@ -93,10 +118,33 @@
             </video>
         </div>
 
+
+        <div class="box">
+            <h3>How to Serve Tea</h3>
+            <video controls>
+                <source src="tea-serving-tutorial.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+
         <div class="box plus-box">
             +
         </div>
 
+    </div>
+
+    <div class="info">
+        <h2>Course Details</h2>
+        <ul>
+            <li>
+                <strong>How to Greet a Customer</strong><br>
+                Learn proper body language, tone, and professional etiquette while welcoming guests.
+            </li>
+            <li>
+                <strong>How to Serve Tea</strong><br>
+                Master correct serving technique, teapot handling, and spill-free pouring.
+            </li>
+        </ul>
     </div>
 
 </body>
